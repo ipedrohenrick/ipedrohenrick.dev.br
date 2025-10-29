@@ -1,0 +1,11 @@
+---
+import { menuLinks } from "@/site.config"
+---
+
+<nav class="divide-x">
+  {
+    menuLinks.map(link => (
+      <a href={link.path} class="px-1.5 box-border font-semibold">{link.title}</a>
+    ))
+  }
+</nav>

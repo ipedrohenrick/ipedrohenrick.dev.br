@@ -1,17 +1,12 @@
 ---
-import { menuLinks } from "@/site.config"
+import Navbar from "@/components/layout/Navbar.astro"
 ---
+
 <header>
   <div class="flex flex-col-reverse mt-1 justify-between sm:mt-4 items-center sm:flex-row">
     <div class="mt-2 sm:mt-0">
       <a href="/" class="text-3xl font-semibold">IPedroHenrick</a>
     </div>
-    <nav class="divide-x">
-      {
-        menuLinks.map(link => (
-          <a href={link.path} class="px-1.5 box-border font-semibold">{link.title}</a>
-        ))
-      }
-    </nav>
+    <Navbar />
   </div>
 </header>

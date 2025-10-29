@@ -1,0 +1,14 @@
+---
+import Navbar from "@/components/layout/Navbar.astro";
+
+import { siteConfig } from "@/site.config";
+---
+
+<footer>
+  <div class="flex flex-col-reverse mt-1 justify-between sm:mt-4 items-center sm:flex-row">
+    <div>
+      <span>© {siteConfig.Author} {siteConfig.Year}</span>
+    </div>
+    <Navbar />
+  </div>
+</footer>
