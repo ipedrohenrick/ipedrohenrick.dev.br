@@ -1,0 +1,19 @@
+---
+import { menuLinks } from "@/site.config"
+---
+<header>
+  <div class="flex justify-between items-center my-1">
+    <div>
+      <a href="/">
+        <h1>IPedroHenrick</h1>
+      </a>
+    </div>
+    <nav>
+      {
+        menuLinks.map(link => (
+          <a href={link.path} class="px-2 border-e-[1.5px] box-border">{link.title}</a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
