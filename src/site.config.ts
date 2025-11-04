@@ -1,4 +1,6 @@
 const siteConfig = ({
+  Lang: "pt-BR",
+  SiteName: "IPedroHenrick",
   Author: "Pedro Henrick Queiroz",
   Year: 2025,
 })

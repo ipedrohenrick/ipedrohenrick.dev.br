@@ -1,0 +1,22 @@
+---
+import { siteConfig } from '@/site.config';
+
+interface Props {
+  title: string
+}
+const { title } = Astro.props;
+
+
+const titleFormated = `${title} | ${siteConfig.SiteName}`
+---
+
+
+<meta charset="utf-8" />
+<link rel="sitemap" href="/sitemap-index.xml">
+<title>{titleFormated}</title>
+<meta name="description" content="Pedro Henrick personal portfolio/blog :)">
+
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
