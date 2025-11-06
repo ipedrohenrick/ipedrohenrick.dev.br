@@ -8,8 +8,8 @@ const siteConfig = ({
 
 const menuLinks: { path: string, title: string }[] = [
   { path: "/", title: "Home" },
-  { path: "/blog", title: "Blog" },
-  { path: "/about", title: "About" },
+  { path: "/blog/", title: "Blog" },
+  { path: "/about/", title: "About" },
 ];
 
 export { menuLinks, siteConfig };
